@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MAYORA — Modest Fashion by Marwa</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<header class="header">
+
+<nav class="nav">
+
+<a href="#home" class="nav-logo">
+MAYORA
+</a>
+
+<div class="nav-links">
+
+<a href="#shop">SHOP</a>
+<a href="#about">ABOUT</a>
+<a href="#contact">CONTACT</a>
+
+<button class="bag-button" onclick="openCart()">
+BAG
+<span id="cart-count">0</span>
+</button>
+
+</div>
+
+</nav>
+
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-image">
+
+<img
+src="20260808_173158906_iOS.png"
+alt="MAYORA by Marwa"
+>
+
+</div>
+
+<div class="hero-content">
+
+<p class="small-title">
+MAYORA BY MARWA
+</p>
+
+<h1>
+Modesty<br>
+meets elegance.
+</h1>
+
+<p class="hero-description">
+Contemporary modest fashion created
+for women who love elegance, confidence
+and timeless style.
+</p>
+
+<a href="#shop" class="main-button">
+DISCOVER MAYORA
+</a>
+
+</div>
+
+</section>
+
+
+<!-- INTRO -->
+
+<section class="intro">
+
+<p class="section-label">
+WELCOME TO MAYORA
+</p>
+
+<h2>
+Beautifully modest.<br>
+Effortlessly feminine.
+</h2>
+
+<p>
+A modest fashion brand created for Muslim women,
+combining timeless silhouettes with modern elegance.
+</p>
+
+</section>
+
+
+<!-- SHOP -->
+
+<section class="shop" id="shop">
+
+<div class="section-heading">
+
+<p class="section-label">
+THE COLLECTION
+</p>
+
+<h2>
+MAYORA Pieces
+</h2>
+
+<p>
+Discover pieces designed to become
+timeless favourites in your wardrobe.
+</p>
+
+</div>
+
+
+<!-- FILTERS -->
+
+<div class="filters">
+
+<button
+class="filter active"
+onclick="filterProducts('all', this)">
+ALL
+</button>
+
+<button
+class="filter"
+onclick="filterProducts('dress', this)">
+DRESSES
+</button>
+
+<button
+class="filter"
+onclick="filterProducts('top', this)">
+TOPS
+</button>
+
+<button
+class="filter"
+onclick="filterProducts('skirt', this)">
+SKIRTS
+</button>
+
+<button
+class="filter"
+onclick="filterProducts('set', this)">
+SETS
+</button>
+
+</div>
+
+
+<!-- PRODUCTS -->
+
+<div class="products">
+
+
+<!-- 01 -->
+
+<article class="product" data-category="top">
+
+<div class="product-image">
+
+<img
+src="20260808_175350408_iOS.webp"
+alt="Dark Blue Classic Shirt"
+>
+
+<span class="product-label">
+TOP
+</span>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-number">
+01
+</span>
+
+<h3>
+Midnight Shirt
+</h3>
+
+<p>
+Dark blue · Plain
+</p>
+
+<span class="coming-price">
+Price coming soon
+</span>
+
+<button
+onclick="addToCart('Midnight Shirt')">
+ADD TO BAG
+</button>
+
+</div>
+
+</article>
+
+
+<!-- 02 -->
+
+<article class="product" data-category="dress">
+
+<div class="product-image">
+
+<img
+src="20260808_175750790_iOS%20-%20Kopie.avif"
+alt="Classic Beige Dress"
+>
+
+<span class="product-label">
+DRESS
+</span>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-number">
+02
+</span>
+
+<h3>
+Beige Classic
+</h3>
+
+<p>
+Beige · Classic
+</p>
+
+<span class="coming-price">
+Price coming soon
+</span>
+
+<button
+onclick="addToCart('Beige Classic')">
+ADD TO BAG
+</button>
+
+</div>
+
+</article>
+
+
+<!-- 03 -->
+
+<article class="product" data-category="dress">
+
+<div class="product-image">
+
+<img
+src="20260808_175904715_iOS.webp"
+alt="Light Pink Elegant Dress"
+>
+
+<span class="product-label">
+DRESS
+</span>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-number">
+03
+</span>
+
+<h3>
+Soft Rose
+</h3>
+
+<p>
+Light pink · Elegant
+</p>
+
+<span class="coming-price">
+Price coming soon
+</span>
+
+<button
+onclick="addToCart('Soft Rose')">
+ADD TO BAG
+</button>
+
+</div>
+
+</article>
+
+
+<!-- 04 -->
+
+<article class="product" data-category="dress">
+
+<div class="product-image">
+
+<img
+src="20260808_175943513_iOS.webp"
+alt="White Black Polka Dot Dress"
+>
+
+<span class="product-label">
+DRESS
+</span>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-number">
+04
+</span>
+
+<h3>
+Monochrome Dots
+</h3>
+
+<p>
+White & black · Classic
+</p>
+
+<span class="coming-price">
+Price coming soon
+</span>
+
+<button
+onclick="addToCart('Monochrome Dots')">
+ADD TO BAG
+</button>
+
+</div>
+
+</article>
+
+
+<!-- 05 -->
+
+<article class="product" data-category="set">
+
+<div class="product-image">
+
+<img
+src="20260808_175959219_iOS.avif"
+alt="Beige Shirt and Long Skirt Set"
+>
+
+<span class="product-label">
+SET
+</span>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-number">
+05
+</span>
+
+<h3>
+Sand Set
+</h3>
+
+<p>
+Beige · Shirt & long skirt
+</p>
+
+<span class="coming-price">
+Price coming soon
+</span>
+
+<button
+onclick="addToCart('Sand Set')">
+ADD TO BAG
+</button>
+
+</div>
+
+</article>
+
+
+<!-- 06 -->
+
+<article class="product" data-category="top">
+
+<div class="product-image">
+
+<img
+src="20260808_180054378_iOS.webp"
+alt="White Silk Polka Dot Shirt"
+>
+
+<span class="product-label">
+TOP
+</span>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-number">
+06
+</span>
+
+<h3>
+Silk Dots
+</h3>
+
+<p>
+White & black · Silk
+</p>
+
+<span class="coming-price">
+Price coming soon
+</span>
+
+<button
+onclick="addToCart('Silk Dots')">
+ADD TO BAG
+</button>
+
+</div>
+
+</article>
+
+
+<!-- 07 -->
+
+<article class="product" data-category="top">
+
+<div class="product-image">
+
+<img
+src="20260808_180728651_iOS.jpg"
+alt="Dark Brown Cotton Shirt"
+>
+
+<span class="product-label">
+TOP
+</span>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-number">
+07
+</span>
+
+<h3>
+Deep Brown
+</h3>
+
+<p>
+Dark brown · Heavy cotton
+</p>
+
+<span class="coming-price">
+Price coming soon
+</span>
+
+<button
+onclick="addToCart('Deep Brown')">
+ADD TO BAG
+</button>
+
+</div>
+
+</article>
+
+
+<!-- 08 -->
+
+<article class="product" data-category="top">
+
+<div class="product-image">
+
+<img
+src="20260809_132142587_iOS.jpg"
+alt="Classic Grey Shirt"
+>
+
+<span class="product-label">
+TOP
+</span>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-number">
+08
+</span>
+
+<h3>
+Classic Grey
+</h3>
+
+<p>
+Grey · Plain
+</p>
+
+<span class="coming-price">
+Price coming soon
+</span>
+
+<button
+onclick="addToCart('Classic Grey')">
+ADD TO BAG
+</button>
+
+</div>
+
+</article>
+
+
+<!-- 09 -->
+
+<article class="product" data-category="skirt">
+
+<div class="product-image">
+
+<img
+src="20260809_132205710_iOS.jpg"
+alt="Beige Skirt"
+>
+
+<span class="product-label">
+SKIRT
+</span>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-number">
+09
+</span>
+
+<h3>
+Soft Sand Skirt
+</h3>
+
+<p>
+Beige · Elegant
+</p>
+
+<span class="coming-price">
+Price coming soon
+</span>
+
+<button
+onclick="addToCart('Soft Sand Skirt')">
+ADD TO BAG
+</button>
+
+</div>
+
+</article>
+
+
+</div>
+
+</section>
+
+
+<!-- BRAND STATEMENT -->
+
+<section class="statement">
+
+<div class="statement-inner">
+
+<p class="section-label">
+MAYORA WOMAN
+</p>
+
+<h2>
+Modest is<br>
+<em>beautiful.</em>
+</h2>
+
+<p>
+MAYORA is for women who want to dress
+modestly without giving up their individuality,
+femininity or sense of style.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT MARWA -->
+
+<section class="about" id="about">
+
+<div class="about-image">
+
+<img
+src="20260808_173158906_iOS.png"
+alt="MAYORA by Marwa"
+>
+
+</div>
+
+<div class="about-content">
+
+<p class="section-label">
+THE STORY BEHIND MAYORA
+</p>
+
+<h2>
+Created by Marwa.
+</h2>
+
+<p>
+MAYORA was created by Marwa with a simple
+vision: to create beautiful, modern and
+modest fashion for Muslim women.
+</p>
+
+<p>
+Every piece is chosen with the idea that
+modesty and elegance can exist together.
+</p>
+
+<p class="signature">
+Marwa
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<p class="section-label">
+SAY HELLO
+</p>
+
+<h2>
+We'd love to hear from you.
+</h2>
+
+<p>
+Questions, ideas or collaborations?
+Get in touch with MAYORA.
+</p>
+
+<a href="mailto:ahmedmerwa047@gmail.com">
+ahmedmerwa047@gmail.com
+</a>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-logo">
+MAYORA
+</div>
+
+<p>
+Modest fashion for Muslim women.
+</p>
+
+<div class="footer-links">
+
+<a href="#shop">SHOP</a>
+<a href="#about">ABOUT</a>
+<a href="#contact">CONTACT</a>
+
+</div>
+
+<p class="copyright">
+© 2026 MAYORA BY MARWA. ALL RIGHTS RESERVED.
+</p>
+
+</footer>
+
+
+<!-- CART -->
+
+<div
+class="cart-overlay"
+id="cart-overlay"
+onclick="closeCart()">
+</div>
+
+
+<aside class="cart" id="cart">
+
+<div class="cart-header">
+
+<h2>
+Your Bag
+</h2>
+
+<button
+class="close-cart"
+onclick="closeCart()">
+×
+</button>
+
+</div>
+
+
+<div
+id="cart-items"
+class="cart-items">
+
+<p class="empty-cart">
+Your bag is empty.
+</p>
+
+</div>
+
+
+<div class="cart-bottom">
+
+<p class="payment-coming">
+Online payment coming soon.
+</p>
+
+</div>
+
+</aside>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
